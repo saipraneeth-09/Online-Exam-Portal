@@ -60,4 +60,4 @@ online_exam/
 *Frontend: HTML, CSS, JavaScript
 *Backend: Python (Flask)
 *Templating: Jinja2
-*Storage: In-memory dictionaries or SQLite (extendable)
+*Storage: In-memory dictionaries or SQLite (extendable).
