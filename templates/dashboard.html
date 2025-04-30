@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h2>Dashboard</h2>
+    <p>Welcome, {{ username }}!</p>
+
+    <div class="dashboard-stats">
+        <div>
+            <strong>Total Tests Available:</strong> {{ total_tests }}
+        </div>
+        <div>
+            <strong>Tests Attempted:</strong> {{ attempted_tests }}
+        </div>
+        <div>
+            <strong>Average Score:</strong> {{ '%.2f' % average_score }}
+        </div>
+    </div>
+
+    <h3>Exam History</h3>
+    {% if history %}
+        <ul>
+            {% for record in history %}
+                <li>Score: {{ record.score }} / {{ record.total }} - {{ record.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No exam history available.</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('exam') }}">Start New Exam</a></p>
+{% endblock %}
