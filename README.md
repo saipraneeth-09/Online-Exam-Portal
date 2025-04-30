@@ -15,9 +15,6 @@ This is a basic online examination platform built using Flask (Python), Jinja2 (
     * A history of the user's past exam attempts with scores and timestamps.
 * **Logout:** Allows users to securely log out of their session.
 
-## Project Structure
-Markdown
-
 # Online Exam Application (Basic Flask Implementation)
 
 This is a basic online examination platform built using Flask (Python), Jinja2 (templating), HTML, CSS, and a minimal amount of JavaScript. It provides core functionalities for user registration, login, taking multiple-choice exams, and viewing results, along with a simple dashboard.
